@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:layout_marginStart="150dp"
+    android:layout_marginTop="15dp"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:src="@drawable/main"/>
+
+    <ListView
+        android:layout_marginTop="90dp"
+        android:id="@+id/item_listView"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/fab"
+    android:layout_margin="15dp"
+    android:layout_gravity ="bottom|end"
+    android:elevation="6dp"
+    android:backgroundTint="#2196F3"
+    app:pressedTranslationZ="12dp"
+    android:src="@drawable/baseline_add_24"/>
+    <Button
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity ="bottom"
+        android:id="@+id/buttonSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:onClick="signOut"
+        android:text="SIGN OUT"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
